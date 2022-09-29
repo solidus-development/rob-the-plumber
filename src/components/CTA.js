@@ -1,7 +1,7 @@
 function CTA() {
     return (
       <div className="cta">
-        CTA
+        <h1>CTA</h1>
       </div>
     );
   }
