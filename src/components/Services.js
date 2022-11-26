@@ -1,7 +1,7 @@
-function Features() {
+function Services() {
     return (
-      <div className="features">
-        <h1>Features</h1>
+      <div className="services">
+        <h1>Services</h1>
         <ul>
             <li>Outline benefits/value of product/services</li>
             <li>Give guarantee/something free</li>
@@ -11,4 +11,4 @@ function Features() {
     );
   }
   
-  export default Features;
+  export default Services;
