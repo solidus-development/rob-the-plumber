@@ -1,5 +1,5 @@
 import './App.css';
-import Navigation from './components/Navigation';
+import Header from './components/Header';
 import Intro from './components/Intro';
 import Services from './components/Services';
 import Testimonials from './components/Testimonials';
@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <Navigation />
+      <Header />
       <Intro />
       <Services />
       <Testimonials />
