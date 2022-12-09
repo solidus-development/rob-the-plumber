@@ -32,7 +32,20 @@ h3, p {
     margin-top: 0;
 }
 
+.logo {
+    padding: 5% 0 5% 0;
+}
+
 .logo h1 {
-    
+    margin-bottom: 0;
+    font-size: 1.1em;
+}
+
+.tagline {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    top: 70%;
+    font-size: 0.8em;
 }
 

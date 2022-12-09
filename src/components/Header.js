@@ -6,7 +6,7 @@ function Header(){
             <Container>
                 <div className='logo'>
                     <h1>Rob The Plumber</h1>
-                    <p>Plumbing and Maintenance</p>
+                    <p className="tagline">Plumbing and Maintenance</p>
                 </div>
             </Container>
         </div>
