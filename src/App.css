@@ -6,7 +6,10 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif; 
 */
 
-
+* {
+    padding: 0;
+    margin: 0;
+}
 
 h1, h2 {
     font-family: 'Oswald', sans-serif; 
@@ -27,5 +30,9 @@ h3, p {
     opacity: 0.8;
     color: white;
     margin-top: 0;
+}
+
+.logo h1 {
+    
 }
 

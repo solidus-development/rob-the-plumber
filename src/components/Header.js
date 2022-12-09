@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
 
 function Header(){
     return(
@@ -6,6 +6,7 @@ function Header(){
             <Container>
                 <div className='logo'>
                     <h1>Rob The Plumber</h1>
+                    <p>Plumbing and Maintenance</p>
                 </div>
             </Container>
         </div>
