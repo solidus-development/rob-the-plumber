@@ -1,8 +1,7 @@
 import Container from "react-bootstrap/Container";
-import { useState } from "react";
 
-function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+function Header(props) {
+  
 
   return (
     <div className="header">
@@ -12,7 +11,7 @@ function Header() {
           <p className="tagline">Plumbing and Maintenance</p>
         </div>
         <div className="navigation">
-          <div className={menuOpen ? 'menu-btn open' : 'menu-btn'} onClick={() => setMenuOpen(!menuOpen)}>
+          <div className={props.menuOpen ? 'menu-btn open' : 'menu-btn'} onClick={() => props.setMenuOpen(!props.menuOpen)}>
             <div className="menu-btn__burger"></div>
           </div>
 
