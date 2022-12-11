@@ -1,3 +1,5 @@
+import phoneIcon from '../images/phone-icon.png'
+
 function Intro() {
     return (
       
@@ -5,7 +7,7 @@ function Intro() {
         <div id='home'></div>
         <div className="ribbon">
           <p>Proudly Serving Nanaimo, BC</p>
-          <p>555-555-5555</p>
+          <p><img className='ribbon-image' src={phoneIcon} alt='Plumber Nanaimo Honest' /> 555-555-5555</p>
         </div>
         <h1>Intro</h1>
         <ul>

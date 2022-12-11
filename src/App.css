@@ -6,9 +6,19 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif; 
 */
 
+html {
+    font-size: 100%;
+}
+
+h1 { font-size: 2.074em; }
+h2 { font-size: 1.728em; }
+h3 { font-size: 1.44em; }
+h4 { font-size: 1.2em; }
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 h1, h2 {
@@ -43,7 +53,6 @@ h3, p {
 
 .logo h1 {
     margin-bottom: 0;
-    font-size: 1.5em;
 }
 
 .tagline {
@@ -51,7 +60,6 @@ h3, p {
     padding: 0;
     font-style: italic;
     top: 70%;
-    font-size: 1em;
 }
 
 .menu-btn {
@@ -65,8 +73,8 @@ h3, p {
 }
 
 .menu-btn__burger {
-    width: 50px;
-    height: 5px;
+    width: 3rem;
+    height: 0.2rem;
     background-color: white;
     transition: all .2s ease-in-out;
 }
@@ -75,8 +83,8 @@ h3, p {
 .menu-btn__burger::after {
     content: '';
     position: absolute;
-    width: 50px;
-    height: 5px;
+    width: 3rem;
+    height: 0.2rem;
     background-color: white;
     transition: all .2s ease-in-out;
 }
@@ -112,7 +120,7 @@ h3, p {
 
 .full-menu li {
     display: inline;
-    margin-right: 1.2em;
+    margin-right: 1.2rem;
 }
 
 /* MOBILE MENU */
@@ -144,11 +152,11 @@ h3, p {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     text-align: right;
-    padding: 1em 1em 0 0;
+    padding: 1rem 1rem 0 0;
 }
 
 .mobile-menu-list li {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .mobile-menu-list li a {
@@ -162,10 +170,15 @@ h3, p {
     background-color: #9F9E9E;
     text-align: center;
     color: white;
+    padding: 0.4rem 0;
 }
 
 .ribbon p {
     margin: 0;
+}
+
+.ribbon-image {
+    margin-right: 0.5rem;
 }
 
 /* RESPONSIVE */
