@@ -156,6 +156,18 @@ h3, p {
     color: white;
 }
 
+/* INTRO */
+
+.ribbon {
+    background-color: #9F9E9E;
+    text-align: center;
+    color: white;
+}
+
+.ribbon p {
+    margin: 0;
+}
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 744px) {
