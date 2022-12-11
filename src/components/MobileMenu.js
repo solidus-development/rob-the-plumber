@@ -1,3 +1,5 @@
+import { HashLink as Link } from 'react-router-hash-link';
+
 function MobileMenu(props) {
 
     let visibility = 'hide'
@@ -9,10 +11,10 @@ function MobileMenu(props) {
     return(
         <div id='mobile-menu' className={visibility}>
             <ul className="mobile-menu-list">
-                <li>Home</li>
-                <li>Services</li>
-                <li>Testimonials</li>
-                <li>About</li>
+                <li><Link smooth to='#home'>Home</Link></li>
+                <li><Link smooth to='#services'>Services</Link></li>
+                <li><Link smooth to='#testimonials'>Testimonials</Link></li>
+                <li><Link smooth to='#about'>About</Link></li>
                 <li>Free Quote</li>
             </ul>
         </div>
