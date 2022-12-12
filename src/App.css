@@ -6,10 +6,7 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif; 
 */
 
-html {
-    font-size: 100%;
-}
-
+html { font-size: 100%; } /* Remember to add to @media screens when necessary */
 h1 { font-size: 2.074em; }
 h2 { font-size: 1.728em; }
 h3 { font-size: 1.44em; }
@@ -181,9 +178,32 @@ h3, p {
     margin-right: 0.5rem;
 }
 
+.intro-heading {
+    margin: 0 auto;
+    position: relative;
+    border: 1px pink solid;
+}
+
+.intro-logo {
+    background-color: #000;
+    opacity: 0.8;
+    color: white;
+    width: 55%;
+    padding: 0.3rem;
+    position: absolute;
+    top: 0.7rem;
+    right: 0.8rem;
+}
+
+.intro-logo-heading {
+    margin-bottom: 0;
+}
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 744px) {
+    /* UNIVERSAL */
+
     /* HEADER */
 
     .menu-btn {
