@@ -26,8 +26,15 @@ h3, p {
     font-family: 'Open Sans', sans-serif;
 }
 
-.component {
-    padding:
+.cta-button {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    background-color: #0075FF;
+    color: white;
+    font-weight: 700;
 }
 
 /* HEADER */
@@ -46,10 +53,6 @@ h3, p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo { 
-    border: pink solid 1px;
 }
 
 .logo h1 {
@@ -224,6 +227,38 @@ h3, p {
     background-size: cover;
     width: 100%;
     height:auto;
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: auto;
+}
+
+.cta-elements {
+    padding: 1rem 0.5rem;
+}
+
+.cta-content {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.cta-text-canvas {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem;
+}
+
+.cta-text-canvas p {
+    font-size: 0.85rem;
+    margin: 0;
 }
 
 /* RESPONSIVE */
