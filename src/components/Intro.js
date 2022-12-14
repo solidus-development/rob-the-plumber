@@ -32,7 +32,7 @@ function Intro() {
             <div className="cta-content">
               <img
                 src={profilePic}
-                className="profile-pic"
+                className="profile-pic white-border"
                 alt="rob-the-plumber"
               ></img>
               <div className="cta-text-canvas">
@@ -42,7 +42,9 @@ function Intro() {
                 </p>
               </div>
             </div>
-            <button className="cta-button">Free Quote</button>
+            <div className='button-row'>
+              <button className="cta-button white-border">Free Quote</button>
+            </div>
           </div>
         </div>
       </div>
