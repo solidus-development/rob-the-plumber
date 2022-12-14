@@ -48,8 +48,13 @@ h3, p {
     align-items: center;
 }
 
+.logo { 
+    border: pink solid 1px;
+}
+
 .logo h1 {
     margin-bottom: 0;
+    font-size: clamp(1.688rem, 1rem, 5rem)
 }
 
 .tagline {
@@ -57,6 +62,11 @@ h3, p {
     padding: 0;
     font-style: italic;
     top: 70%;
+    font-size: 0.9rem;
+}
+
+.full-menu {
+    min-width: 31.5rem;
 }
 
 .menu-btn {
@@ -178,30 +188,47 @@ h3, p {
     margin-right: 0.5rem;
 }
 
-.intro-heading {
+.intro-billboard {
     margin: 0 auto;
     position: relative;
-    border: 1px pink solid;
+    width: 100%;
+    height: auto;
+}
+
+.intro-billboard-content-container {
+    max-width: 35rem;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
 }
 
 .intro-logo {
     background-color: #000;
     opacity: 0.8;
     color: white;
-    width: 55%;
-    padding: 0.3rem;
+    padding: 0.4rem;
     position: absolute;
-    top: 0.7rem;
-    right: 0.8rem;
+    top: 0.8rem;
+    right: 0rem;
 }
 
 .intro-logo-heading {
     margin-bottom: 0;
 }
 
+.cta {
+    background-image: url('./images/cta-background675x900.jpeg');
+    background-color: rgba(0, 0, 0, 0.8);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
 /* RESPONSIVE */
 
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 770px) {
     /* UNIVERSAL */
 
     /* HEADER */
@@ -213,6 +240,12 @@ h3, p {
     .full-menu {
         display: flex;
     }
+
+}
+
+@media screen and (min-width: 1000px) {
+    /* UNIVERSAL */
+    html { font-size: 120%; } /* Remember to add to @media screens when necessary */
 
 }
 
