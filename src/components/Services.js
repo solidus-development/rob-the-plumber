@@ -4,15 +4,17 @@ import renovation from "../images/renovation.png";
 import maintenance from "../images/maintenance.png";
 import tools from "../images/tools.png";
 
-function Services() {
+
+function Services(props) {
+
   return (
-    <div className="services section">
-      <div className="title-frame">
+    <div className='services section'>
+      <div className="title-frame" data-aos='fade-up'>
         <h2 className="section-title">Services</h2>
       </div>
       <Container>
         <Row>
-          <Col sm={12} md={6} className="service">
+          <Col sm={12} md={6} className="service" data-aos='fade-right'>
             <img
               src={siren}
               alt="Emergency Repairs"
@@ -34,7 +36,7 @@ function Services() {
               </div>
             </div>
           </Col>
-          <Col sm={12} md={6} className="service">
+         <Col sm={12} md={6} className="service" data-aos='fade-left'>
             <img
               src={renovation}
               alt="Renovations"
@@ -56,7 +58,7 @@ function Services() {
               </div>
             </div>
           </Col>
-          <Col sm={12} md={6} className="service">
+         <Col sm={12} md={6} className="service" data-aos='fade-right'>
             <img
               src={maintenance}
               alt="Maintenance"
@@ -78,7 +80,7 @@ function Services() {
               </div>
             </div>
           </Col>
-          <Col sm={12} md={6} className="service">
+         <Col sm={12} md={6} className="service" data-aos='fade-left'>
             <img
               src={tools}
               alt="Repair and Installation"
@@ -102,6 +104,9 @@ function Services() {
           </Col>
         </Row>
       </Container>
+      <div className='button-row' data-aos='flip-right'>
+          <button className="cta-button white-border">Free Quote</button>
+      </div>
     </div>
   );
 }

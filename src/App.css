@@ -28,6 +28,7 @@ h3, p {
 
 .button-row {
     padding: 1rem 0;
+    text-align: center;
 }
 
 .cta-button {
@@ -294,6 +295,7 @@ h3, p {
 
 .cta {
     background-image: url('./images/cta-background675x900.jpeg');
+    background-attachment: fixed;
     background-color: rgba(0, 0, 0, 0.8);
     background-position: center;
     background-repeat: no-repeat;
