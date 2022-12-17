@@ -18,11 +18,15 @@ h4 { font-size: 1.2em; }
     box-sizing: border-box;
 }
 
-h1, h2 {
+.App {
+    overflow: clip;
+}
+
+h1, h2, h3 {
     font-family: 'Oswald', sans-serif; 
 }
 
-h3, p {
+p {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -78,12 +82,12 @@ h3, p {
 /* HEADER */
 
 .header {
-    background-color: #000;
-    opacity: 0.8;
+    background-color: #3D3B3B;
     color: white;
     margin-top: 0;
     padding: 1em 0 1em 0;
     position: sticky;
+    top: 0;
     z-index: 2;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
@@ -95,7 +99,7 @@ h3, p {
         opacity: 0;
     }
     100% {
-        opacity: 0.8;
+        opacity: 1;
      }
 }
 
@@ -273,7 +277,7 @@ h3, p {
 }
 
 .intro-logo {
-    background-color: #000;
+    background-color: #3D3B3B;
     opacity: 0.8;
     color: white;
     padding: 0.4rem;
@@ -389,6 +393,52 @@ h3, p {
 
 .service-text {
     padding: 1rem;
+}
+
+/* TESTIMONIALS */
+
+.testimonial-col {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonial-canvas {
+    max-width: 16rem;
+}
+
+.testimonial-text {
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author {
+    font-weight: 600;
+}
+
+/* ABOUT */
+
+.family-image {
+    width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #3D3B3B;
+    color: white;
+    padding: 1rem 0;
+    font-size: 0.5rem;
+}
+
+.row img {
+    width: 2.5rem;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
 }
 
 /* RESPONSIVE */
