@@ -48,6 +48,7 @@ function Testimonial() {
             </div>
           </Col>
         </Row>
+        <div id='about'></div>
       </Container>
     </div>
   );

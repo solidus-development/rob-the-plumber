@@ -21,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+      <div id="home"></div>
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <MobileMenu menuOpen={menuOpen} />
       <Intro />

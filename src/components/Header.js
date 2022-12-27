@@ -1,4 +1,5 @@
 import Container from "react-bootstrap/Container";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Header(props) {
   
@@ -18,10 +19,10 @@ function Header(props) {
           {/* FOR LARGER TABLETS AND DESKTOP */}
 
           <ul className="full-menu">
-            <li>Home</li>
-            <li>Services</li>
-            <li>Testimonials</li>
-            <li>About</li>
+            <li><Link smooth to='/#home'>Home</Link></li>
+            <li><Link smooth to='/#services'>Services</Link></li>
+            <li><Link smooth to='/#testimonials'>Testimonials</Link></li>
+            <li><Link smooth to='/#about'>About</Link></li>
             <li>Free Quote</li>
           </ul>
         </div>

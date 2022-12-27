@@ -30,6 +30,11 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .button-row {
     padding: 1rem 0;
     text-align: center;
@@ -124,6 +129,11 @@ p {
 
 .full-menu {
     min-width: 31.5rem;
+}
+
+.full-menu a, .full-menu a:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 .menu-btn {
@@ -223,9 +233,9 @@ p {
     margin-bottom: 1rem;
 }
 
-.mobile-menu-list li a {
+.mobile-menu-list li a, .mobile-menu-list li a:hover {
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
 /* INTRO */
@@ -429,11 +439,45 @@ p {
     background-color: #3D3B3B;
     color: white;
     padding: 1rem 0;
-    font-size: 0.5rem;
+    border: white 1px solid;
 }
 
-.row img {
-    width: 2.5rem;
+.footer a, .footer a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-column {
+    margin-bottom: 1rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+    margin-bottom: 1rem;
+    
+}
+
+.facebook-icon {
+    width: 0.8rem;
+    height: auto;
+}
+
+.social-media-icon {
+    width: 1.5rem;
+    height: auto;
+}
+
+.credits p {
+    margin-bottom: 0;
 }
 
 .copyright {

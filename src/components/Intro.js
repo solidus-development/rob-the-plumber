@@ -4,8 +4,9 @@ import profilePic from "../images/profile-pic.jpg";
 
 function Intro() {
   return (
+    <>
+    
     <div className="intro">
-      <div id="home"></div>
       <div className="ribbon">
         <p>Proudly Serving Nanaimo, BC</p>
         <p>
@@ -42,13 +43,16 @@ function Intro() {
                 </p>
               </div>
             </div>
+            <div id='services'></div>
             <div className='button-row'>
               <button className="cta-button white-border">Free Quote</button>
             </div>
           </div>
         </div>
       </div>
+      
     </div>
+    </>
   );
 }
 
