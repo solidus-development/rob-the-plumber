@@ -192,6 +192,14 @@ a {
     margin: 0;
 }
 
+.contact-button {
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    background-color: inherit;
+    color: white;
+}
+
 .full-menu li {
     display: inline;
     margin-right: 1.2rem;

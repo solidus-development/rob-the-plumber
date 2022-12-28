@@ -23,7 +23,7 @@ function Header(props) {
             <li><Link smooth to='/#services'>Services</Link></li>
             <li><Link smooth to='/#testimonials'>Testimonials</Link></li>
             <li><Link smooth to='/#about'>About</Link></li>
-            <li>Free Quote</li>
+            <li ><button className='contact-button' onClick={() => props.setContactModal(true)}>Free Quote</button></li>
           </ul>
         </div>
       </Container>
