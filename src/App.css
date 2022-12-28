@@ -22,7 +22,7 @@ h4 { font-size: 1.2em; }
     overflow: clip;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Oswald', sans-serif; 
 }
 
@@ -244,6 +244,28 @@ a {
 .mobile-menu-list li a, .mobile-menu-list li a:hover {
     text-decoration: none;
     color: inherit;
+}
+
+/* CONTACT MODAL */
+
+
+.modal-header {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid pink;
+}
+
+.modal-title.h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+  display: block;
+  margin: 0 auto 1em;
+  background-color: #D8CECE;
+  border: black 2px solid;
+  padding: 0.3rem 0.5rem;
 }
 
 /* INTRO */
