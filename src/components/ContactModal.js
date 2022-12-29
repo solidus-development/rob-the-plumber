@@ -1,7 +1,6 @@
 import CloseButton from "react-bootstrap/CloseButton";
 import Modal from "react-bootstrap/Modal";
 import Form from 'react-bootstrap/Form';
-import { Button } from 'react-bootstrap';
 
 const ContactModal = (props) => {
     return (
@@ -21,7 +20,7 @@ const ContactModal = (props) => {
                   <input type="hidden" name="_next" value="#" />
                   <input type="hidden" name="_subject" value="New enquiry from portfolio site" />
                   <textarea name="message" rows="5" placeholder="How can I help you?"></textarea>
-                  <Button variant='dark' type='submit'>Send</Button>
+                  <button type='submit'>Send</button>
               </form>
           </div>
                 </Modal.Body>
