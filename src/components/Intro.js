@@ -1,8 +1,27 @@
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import phoneIcon from "../images/phone-icon.png";
 import blackPipe from "../images/black-pipe350x349.png";
 import profilePic from "../images/profile-pic.jpg";
 
 function Intro() {
+
+  const [valueProp, setValueProp] = useState([]);
+
+  useEffect(() => {
+    const apiUrl = 'http://rob-test-3.local/wp-json/wp/v2/posts';
+    
+    axios.get(apiUrl)
+      .then((res) => {
+        console.log('test')
+        
+      })
+      .catch(error => {
+        
+      })
+  }, []);
+
+
   return (
     <>
     
