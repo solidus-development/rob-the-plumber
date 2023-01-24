@@ -27,10 +27,10 @@ function App() {
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} setContactModal={setContactModal}/>
       <MobileMenu menuOpen={menuOpen} setContactModal={setContactModal}/>
       <ContactModal contactModal={contactModal} setContactModal={setContactModal} />
-      <Intro />
-      <Services sectionReveal={sectionReveal} setSectionReveal={setSectionReveal}/>
+      <Intro setContactModal={setContactModal}/>
+      <Services sectionReveal={sectionReveal} setSectionReveal={setSectionReveal} setContactModal={setContactModal}/>
       <Testimonials />
-      <About />
+      <About setContactModal={setContactModal} />
       <Footer />
     </div>
   );

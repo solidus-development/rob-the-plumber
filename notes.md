@@ -12,4 +12,24 @@ Animations on scroll effect [from this one](https://www.youtube.com/watch?v=JcHL
 
 ## Notes from a [React-Wordpress Tutorial](https://www.youtube.com/watch?v=ScFy4AzLOw8&list=PLD8nQCAhR3tTzWA8K5XQQps4u5kMFJjIG&index=3&t=1852s)
 
+## Alternatives to WordPress
+from [this youtube vid](https://www.youtube.com/watch?v=_VwurOVFRZY)
 
+### E-Commerce
+Shopify
+
+### Blogging
+Wizrd
+
+### Brochure/Portfolio Website (Good for visuals)
+Squarespace/Wix
+
+## Online courses
+teach:able
+
+## Internet Marketing Funnels
+System.io
+clickfunnels
+
+## for designers
+webflow (it's like photoshop)

@@ -4,20 +4,20 @@ import phoneIcon from "../images/phone-icon.png";
 import blackPipe from "../images/black-pipe350x349.png";
 import profilePic from "../images/profile-pic.jpg";
 
-function Intro() {
+function Intro(props) {
 
   const [valueProp, setValueProp] = useState([]);
 
   useEffect(() => {
-    const apiUrl = 'http://rob-test-3.local/wp-json/wp/v2/posts';
+    const apiUrl = 'http://rob-test-3.local/wp-json/wp/v2/posts/';
     
     axios.get(apiUrl)
       .then((res) => {
-        console.log('test')
+        console.log(res)
         
       })
       .catch(error => {
-        
+        console.log('error', error)
       })
   }, []);
 
@@ -64,7 +64,7 @@ function Intro() {
             </div>
             <div id='services'></div>
             <div className='button-row'>
-              <button className="cta-button white-border">Free Quote</button>
+              <button className="cta-button white-border" onClick={() => props.setContactModal(true)}>Free Quote</button>
             </div>
           </div>
         </div>

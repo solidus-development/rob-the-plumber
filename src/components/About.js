@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import family from "../images/family.jpeg";
 
-function About() {
+function About(props) {
   return (
     <div className="about section">
       <div className="title-frame" data-aos="fade-up">
@@ -33,7 +33,7 @@ function About() {
           </Row>
         </Container>
         <div className='button-row' data-aos='flip-right'>
-          <button className="cta-button white-border">Free Quote</button>
+          <button className="cta-button white-border" onClick={() => props.setContactModal(true)}>Free Quote</button>
       </div>
     </div>
   );
