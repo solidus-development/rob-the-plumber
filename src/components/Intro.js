@@ -1,26 +1,18 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import useContentful from './useContentful';
 import phoneIcon from "../images/phone-icon.png";
 import blackPipe from "../images/black-pipe350x349.png";
 import profilePic from "../images/profile-pic.jpg";
 
 function Intro(props) {
 
-  const [valueProp, setValueProp] = useState([]);
+  const [valueProposition, setValueProposition] = useState([]);
+  const { getValueProposition } = useContentful();
 
   useEffect(() => {
-    const apiUrl = 'http://rob-test-3.local/wp-json/wp/v2/posts/';
-    
-    axios.get(apiUrl)
-      .then((res) => {
-        console.log(res)
-        
-      })
-      .catch(error => {
-        console.log('error', error)
-      })
-  }, []);
-
+    getValueProposition().then((response) => setValueProposition(response))
+  })
 
   return (
     <>
@@ -57,8 +49,7 @@ function Intro(props) {
               ></img>
               <div className="cta-text-canvas">
                 <p>
-                  Value proposition which makes value clear to the user. This is
-                  why you should hire Rob as opposed to someone else.
+                  {valueProposition}
                 </p>
               </div>
             </div>
