@@ -1,4 +1,6 @@
+import { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import useContentful from './useContentful';
 import siren from "../images/siren.png";
 import renovation from "../images/renovation.png";
 import maintenance from "../images/maintenance.png";
@@ -6,6 +8,24 @@ import tools from "../images/tools.png";
 
 
 function Services(props) {
+
+  const [emergencyService, setEmergencyService] = useState([]);
+  const [renovationService, setRenovationService] = useState([]);
+  const [maintenanceService, setMaintenanceService] = useState([]);
+  const [installationService, setInstallationService] = useState([]);
+  const { 
+    getEmergencyService, 
+    getRenovationService,
+    getMaintenanceService,
+    getInstallationService
+   } = useContentful();
+
+  useEffect(() => {
+    getEmergencyService().then((response) => setEmergencyService(response))
+    getRenovationService().then((response) => setRenovationService(response))
+    getMaintenanceService().then((response) => setMaintenanceService(response))
+    getInstallationService().then((response) => setInstallationService(response))
+  }, [])
 
   return (
     <div className='services section'>
@@ -25,12 +45,7 @@ function Services(props) {
               <div className="overlay-light">
                 <div className="service-text">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    sed turpis sit amet diam sagittis laoreet. Ut et tortor et
-                    diam pulvinar gravida. Sed eleifend sem ut justo faucibus,
-                    ut posuere ligula sodales. Donec et rhoncus quam, a semper
-                    est. Vivamus vel justo aliquet, dictum quam ac, ultricies
-                    leo. Mauris.
+                    {emergencyService}
                   </p>
                 </div>
               </div>
@@ -47,12 +62,7 @@ function Services(props) {
             <div className="overlay-light">
                 <div className="service-text">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    sed turpis sit amet diam sagittis laoreet. Ut et tortor et
-                    diam pulvinar gravida. Sed eleifend sem ut justo faucibus,
-                    ut posuere ligula sodales. Donec et rhoncus quam, a semper
-                    est. Vivamus vel justo aliquet, dictum quam ac, ultricies
-                    leo. Mauris.
+                    {renovationService}
                   </p>
                 </div>
               </div>
@@ -69,12 +79,7 @@ function Services(props) {
             <div className="overlay-light">
                 <div className="service-text">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    sed turpis sit amet diam sagittis laoreet. Ut et tortor et
-                    diam pulvinar gravida. Sed eleifend sem ut justo faucibus,
-                    ut posuere ligula sodales. Donec et rhoncus quam, a semper
-                    est. Vivamus vel justo aliquet, dictum quam ac, ultricies
-                    leo. Mauris.
+                    {maintenanceService}
                   </p>
                 </div>
               </div>
@@ -91,12 +96,7 @@ function Services(props) {
             <div className="overlay-light">
                 <div className="service-text">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    sed turpis sit amet diam sagittis laoreet. Ut et tortor et
-                    diam pulvinar gravida. Sed eleifend sem ut justo faucibus,
-                    ut posuere ligula sodales. Donec et rhoncus quam, a semper
-                    est. Vivamus vel justo aliquet, dictum quam ac, ultricies
-                    leo. Mauris.
+                    {installationService}
                   </p>
                 </div>
               </div>
@@ -106,7 +106,7 @@ function Services(props) {
       </Container>
       <div id='testimonials'></div>
       <div className='button-row' data-aos='flip-right'>
-          <button className="cta-button white-border">Free Quote</button>
+          <button className="cta-button white-border" onClick={() => props.setContactModal(true)}>Free Quote</button>
       </div>
     </div>
   );

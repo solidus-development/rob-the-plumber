@@ -1,8 +1,19 @@
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import useContentful from './useContentful';
 import phoneIcon from "../images/phone-icon.png";
 import blackPipe from "../images/black-pipe350x349.png";
 import profilePic from "../images/profile-pic.jpg";
 
-function Intro() {
+function Intro(props) {
+
+  const [valueProposition, setValueProposition] = useState([]);
+  const { getValueProposition } = useContentful();
+
+  useEffect(() => {
+    getValueProposition().then((response) => setValueProposition(response))
+  })
+
   return (
     <>
     
@@ -38,14 +49,13 @@ function Intro() {
               ></img>
               <div className="cta-text-canvas">
                 <p>
-                  Value proposition which makes value clear to the user. This is
-                  why you should hire Rob as opposed to someone else.
+                  {valueProposition}
                 </p>
               </div>
             </div>
             <div id='services'></div>
             <div className='button-row'>
-              <button className="cta-button white-border">Free Quote</button>
+              <button className="cta-button white-border" onClick={() => props.setContactModal(true)}>Free Quote</button>
             </div>
           </div>
         </div>
